@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="navbar navbar-center">
@@ -23,7 +24,7 @@
             <h3>Designing experiences for <span>everyone</span> in mind</h3>
             <p>I'm a product/UX designer and researcher. I strive to improve peoples everyday lives with thoughtful, intentional design, while prioritizing accessibility and inclusivity. </p>
         </div>
-        <div class="cta">
+        <div class="cta" data-aos="fade-up">
             <div class="cta-content">
                 <h2>Digest Diary</h2>
                 <ul>
@@ -62,7 +63,7 @@
                 </g>
             </svg>
         </a>
-        <div class="home-about">
+        <div class="home-about" data-aos="fade-up">
             <div class="home-about-img">
                 <img src="img/bri.jpeg">
             </div>
@@ -87,7 +88,7 @@
                 </g>
             </svg>
         </a>
-        <div class="home-contact">
+        <div class="home-contact" data-aos="fade-up">
             <h2>Great designs start with great conversations.</h2>
             <p>I create thoughtful, inclusive and accessible experiences that make a positive impact—let’s design something meaningful together.</p>
             <a class="button button-arrow" href="contact.html">Let's Connect
@@ -102,10 +103,22 @@
             </a>
         </div>
     </div>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2025 Bri Biasone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,          // Start animations when 200px from viewport
+            delay: 100,           // Delay between animations
+            duration: 600,        // Animation duration
+            easing: 'ease-out',   // Easing function
+            once: false            // Only animate once
+        });
+    </script>
 </body>
-<footer>
-    <div class="footer">
-        <p>&copy; 2025 Bri Biasone. All rights reserved.</p>
-    </div>
-</footer>
 </html>
