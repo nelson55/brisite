@@ -1,0 +1,9 @@
+/* Importing all the component CSS files */
+@import 'base/reset.css';
+@import 'base/globals.css';
+@import 'components/navbar.css';
+@import 'components/footer.css';
+@import 'components/hero.css';
+@import 'pages/contact.css';
+@import 'pages/home.css';
+@import 'components/buttons.css';
